@@ -21,7 +21,6 @@ a {
 	margin: 10px;
 	cursor: pointer;
 	border: none;
-	text-decoration: none;
  	border-radius: 5px;
 }
 
@@ -33,5 +32,4 @@ a {
 	display: block;
 	background-color: aliceblue;
 	border: none;
-	text-decoration: none;
 }
