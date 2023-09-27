@@ -1,26 +1,26 @@
 * {
-		background: cornsilk;
-		margin: 50px;
-		font-family: "helvetica";
+	background: aliceblue;
+	font-family: 'Major Mono Display', monospace;
 }
 
-
-section {
-	position: center;
-	border: solid thick black;
-	padding: 40px;
+h1 {
+	font-size: 100px;
 }
 
-a {
+p{
 	color: black;
 }
 
-img {
-	margin: 0;
-	width: 20px;
-}
-
-img#wow {
-	width: 600px;
-	padding: 10px;
+a {
+	padding: 2% 40%;
+	background: black;
+	text-align: center;
+	text-decoration: none;
+	color: aliceblue;
+	display: inline-block;
+	margin: 10px;
+	cursor: pointer;
+	border: none;
+	text-decoration: none;
+ 	border-radius: 5px;
 }
