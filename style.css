@@ -24,3 +24,14 @@ a {
 	text-decoration: none;
  	border-radius: 5px;
 }
+
+.coming {
+	padding: 2% 40%;
+	text-align: center;
+	text-decoration: none;
+	color: black;
+	display: block;
+	background-color: aliceblue;
+	border: none;
+	text-decoration: none;
+}
