@@ -1,26 +1,110 @@
+html {
+	box-sizing: border-box;
+}
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+.clearfix:before;
+.clearfix:after {
+	content: "";
+	display: table;
+}
+.clearfix:after {
+	clear: both;
+}
+
 * {
-	background: aliceblue;
-	font-family: 'Major Mono Display', monospace;
+	/* background: rebeccapurple; 
+	color: gainsboro; */
+	/*font-family: 'Cedarville Cursive', cursive;*/
+	font-family: 'Gabarito', cursive;
+}
+
+header, footer {
+	background: whitesmoke;
+	color: steelblue;
+}
+
+section#hero {
+	background: steelblue; 
+	color: whitesmoke;
+	padding-top: 20px;
+}
+
+section#main {
+	background: whitesmoke;
+	padding-top: 50px;
+	padding-bottom: 30px;
+}
+
+footer {
+	background: steelblue;
+	color: whitesmoke;
+}
+
+div#img {
+	width: 100%;
+	padding-top: 20px;
 }
 
 h1 {
-	font-size: 100px;
+	font-size: 60px;
+	font-family: 'Cedarville Cursive', cursive;
 }
 
-p{
-	color: black;
+h2{
+	font-size: 40px;
 }
 
-a {
+h3 {
+	font-size: 30px;
+	font-family: 'Cedarville Cursive', cursive;
+}
+
+p {
+	font-family: 'Cedarville Cursive', cursive;
+}
+
+a#top {
 	padding: 2% 40%;
-	background: black;
+	background: none;
 	text-align: center;
 	text-decoration: none;
-	color: aliceblue;
+	color: steelblue;
 	display: inline-block;
-	margin: 10px;
+	margin: 10%;
 	cursor: pointer;
 	border: none;
-	text-decoration: none;
  	border-radius: 5px;
+ 	font-size: 20px;
+ 	font-weight: 700;
 }
+
+a#foot {
+	padding: 2%;
+	background: none;
+	text-align: left;
+	color: whitesmoke;
+	margin: none;
+	cursor: pointer;
+ 	font-size: 20px;
+ 	font-weight: 400;
+}
+
+a#home {
+	background: none;
+	text-decoration: none;
+	color: steelblue;
+	margin: none;
+}
+
+ul {
+	 	list-style-type: none;
+	 }
+
+div#copyright {
+	text-align: right;
+}
+
+
