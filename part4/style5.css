@@ -1,0 +1,181 @@
+/* Style page for Part 4 page */
+
+/* Color codes
+cream - #F1ECD5
+coffee - #E6D5B3
+dark - #4D3219
+hover - #CFA06E
+*/
+
+/* box model fix */
+
+html {
+	box-sizing: border-box;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+/* ++++++++++++++++++++++++++++++++++ */
+
+/* clearfix */
+
+.clearfix:before,
+.clearfix:after {
+	content: " ";
+	display: table;
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+/* ++++++++++++++++++++++++++++++++++ */
+
+* {
+	margin: 0;
+	font-family: 'Zeyada', cursive;
+	color: #4D3219;
+	text-decoration: none;
+}
+
+body {
+	font-size: 1.25em;
+	background: #E6D5B3;
+}
+
+h1 {
+	line-height: 0.5;
+}
+
+h3 {
+	line-height: 0.5;
+}
+
+h6 {
+	line-height: 5.5;
+}
+
+header {
+	background: #F1ECD5;
+	padding: 2em 0;
+}
+
+a#link {
+	font-size: .7em;
+	font-weight: 1500;
+	margin-left: 50px;
+}
+
+a:hover {
+	color: #CFA06E;
+}
+
+.row .col-9 ul {
+	display: flex;
+	list-style: none;
+	padding-top: 2.5em;
+	background: #F1ECD5;
+	float: right;
+}
+
+img#cover {
+	position: relative;
+	align-content: center;
+	float: center;
+}
+
+/* =================== jumbotron collage start ===================== */
+
+#jumbotron {
+	background-image: url("images/sky.png");
+	background-repeat: no-repeat;
+	background-position: fixed;
+	background-position: center;
+	position: relative;
+	height: 30em;
+}
+
+#jumbotron:hover {
+	height: 31em;
+	transition: 2s;
+}
+
+img#tree {
+	position: absolute;
+	z-index: 1;
+	right: 12%;
+	top: 8%;
+	height: 80%;
+}
+
+img#castle {
+	position: absolute;
+	top: 10%;
+	z-index: 2;
+	height: 80%;
+}
+
+img#houses {
+	position: absolute;
+	right: 20%;
+	top: 20%;
+	height: 70%;
+	z-index: 3;
+}
+
+img#train {
+	position: absolute;
+	left: 41%;
+	bottom: 8%;
+	z-index: 4;
+	height: 55%;
+}
+
+img#moon {
+	position: absolute;
+	top: 20%;
+	right: 75%;
+	z-index: 5;
+	height: 50%;
+}
+
+/* =================== jumbotron collage end ===================== */
+
+.col-6 {
+	background: #E6D5B3;
+	padding-top: 3em;
+	padding-bottom: 3em;
+	padding-left: 1.8em;
+}
+
+section#lyrics {
+	padding-top: 3em;
+	padding-bottom: 12em;
+}
+
+footer {
+	background: #F1ECD5;
+	height: 100vh;
+}
+
+footer div {
+	padding-top: 2.5em;
+	padding-left: 2.5em;
+}
+
+footer ul {
+	display: flex;
+	list-style: none;
+	flex-direction: column;
+	padding-top: 2.5em;
+}
+
+footer .col-12 {
+	display: flex;
+}
+
+
+
+
