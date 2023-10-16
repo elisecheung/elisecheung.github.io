@@ -1,0 +1,203 @@
+/* Style page for Part 5 page */
+
+/* Color codes
+	gray - #E8E8E8
+	light green - #CDE2A7
+	dark green - #5E8E2F
+	purple - #605EC9
+*/
+
+/* Fonts
+	font-family: 'Caladea', serif;
+	font-family: 'Rubik Mono One', monospace;
+*/
+
+/* box model fix */
+
+html {
+	box-sizing: border-box;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+/* ++++++++++++++++++++++++++++++++++ */
+
+/* clearfix */
+
+.clearfix:before,
+.clearfix:after {
+	content: " ";
+	display: table;
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+/* ++++++++++++++++++++++++++++++++++ */
+
+* {
+	font-family: 'Rubik Mono One', monospace;
+	color: #605EC9;
+}
+
+
+/* =============== index6.html styling =============== */
+
+/* nav styling */
+
+.container-fluid {
+	padding-top: 2em;
+	padding-bottom: 1em;
+	background: #E8E8E8;
+}
+
+nav {
+	overflow: auto;
+	white-space: nowrap;
+}
+
+ul {
+	list-style: none;
+	display: flex;
+}
+
+a {
+	text-decoration: none;
+	color: #605EC9;
+	padding-right: 5em;
+	display: inline;
+}
+
+a:hover {
+	color: #5E8E2F;
+}
+
+
+/* hero section styling */
+
+img {
+	max-width: 100%;
+}
+
+.container-fluid#hero {
+	padding-top: 0;
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	grid-template-rows: auto auto;
+	background: #E8E8E8;
+	background-image: url(images/vangogh.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100%;
+	height: 70em;
+}
+
+#chunk {
+	grid-column-start: 1;
+	grid-column-end: 6;
+	grid-row-start: 2;
+	grid-row-end: 4;
+	padding-left: 2em;
+	z-index: 5;
+}
+
+#chunk p {
+	color: black;
+	font-size: 2em;
+	font-family: 'Caladea', serif;
+	font-weight: 700;
+}
+
+#quote h1 {
+	color: black;
+	font-size: 2em;
+}
+
+#eyes {
+	grid-column-start: 3;
+	grid-column-end: 10;
+	grid-row-start: 4;
+	grid-row-end: 6;
+	z-index: 3;
+}
+
+#mountains {
+	grid-column-start: 2;
+	grid-column-end: 7;
+	grid-row-start: 5;
+	grid-row-end: 7;
+	z-index: 2;
+}
+
+
+img:hover {
+	box-shadow: 5px 10px 8px black;
+	transition: 0.5s;
+}
+
+
+/* =============== sight.html styling =============== */
+
+.container-fluid#sighthero {
+	padding-top: 0;
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	grid-template-rows: auto auto;
+	background: #E8E8E8;
+	background-image: url(images/eyes.jpg);
+	background-repeat: repeat;
+	background-position: relative;
+	background-size: 100%;
+	height: 70em;
+}
+
+#sightchunk {
+	grid-column-start: 1;
+	grid-column-end: 12;
+	grid-row-start: 2;
+	grid-row-end: 8;
+	padding-left: 2em;
+	z-index: 5;
+	position: relative;
+}
+
+#sightchunk p {
+	color: #E8E8E8;
+	font-size: 15em;
+	font-family: 'Caladea', serif;
+	font-weight: 700;
+	text-justify: full;
+	line-height: 1em;
+}
+
+#sightchunk:hover {
+	opacity: 0;
+	transition: 2s;
+}
+
+#poem {
+	grid-column-start: 1;
+	grid-column-end: 13;
+	grid-row-start: 1;
+	grid-row-end: 9;
+	padding-left: 2em;
+	z-index: 4;
+}
+
+#poem p {
+	color: #fff;
+	font-size: 2em;
+	font-family: 'Caladea', serif;
+	font-weight: 700;
+	text-justify: right;
+}
+
+
+
+
+
+
+

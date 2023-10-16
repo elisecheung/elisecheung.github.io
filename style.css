@@ -9,6 +9,13 @@ h1 {
 
 p{
 	color: black;
+	text-align: center;
+}
+
+footer p {
+	font-size: .25em;
+	padding: 5em 0;
+	border-top: solid black;
 }
 
 a {
@@ -32,4 +39,5 @@ a {
 	display: block;
 	background-color: aliceblue;
 	border: none;
+	padding-bottom: 10em;
 }
