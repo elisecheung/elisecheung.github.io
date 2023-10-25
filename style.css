@@ -7,6 +7,10 @@ h1 {
 	font-size: 100px;
 }
 
+h3 {
+	margin-top: 5em;
+}
+
 p{
 	color: black;
 	text-align: center;
@@ -16,6 +20,7 @@ footer p {
 	font-size: .25em;
 	padding: 5em 0;
 	border-top: solid black;
+	margin-top: 20em;
 }
 
 a {
