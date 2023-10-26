@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- The title of the site -->
-    <title>53 Product Page</title>
+    <title>Pencil | 53</title>
+    <link rel="icon" type="image/x-icon" href="images/we-transfer.png">
 
     <!-- The normalize file first -->
     <link rel="stylesheet" type="text/css" href="css/p2_normalize.css">
@@ -27,7 +28,7 @@
 
   <!-- *********************
     Below here starts the code that will show up in the browser -->
-  <body>
+  <body id="product">
     <!-- The header section should be the same for each page in the 53 site -->
     <header class="container-fluid">
       <div class="container">
@@ -43,75 +44,75 @@
               <li ><a id="search">What are you looking for?</a></li>
             </ul>
           </nav>
-        </div>
-      </div>
-    </header>
+        </div> <!-- row -->
+      </div> <!-- container -->
+    </header> <!-- container-fluid -->
 
-    <section class="container-fluid" id="backspace">
+    <!-- Product page hero section -->
+    <section class="container-fluid">
       <div class="row">
         <div id="hero-chunk2">
-          <h1 class="tighten">Sharper <br>than ever.</h1>
-          <h5 class="tighten">The No. 2 pencil our way.</h5>
-          <a href="#" class="CTAtoo2">Order now</a>
-          <img id="sharper" src="images/sharper.png" class="col-md-9">
-        </div>
-      </div>
-    </section>
+          <div class="col-md-5">
+            <img id="sharper" src="images/sharper.png" class="col-md-9">
+          </div>
+          <div class="col-md-11 offset-md-1" id="sharperthanever">
+            <h1 class="tighten">Sharper <br>than ever.</h1>
+            <h5 class="tighten">The No. 2 pencil our way.</h5>
+            <a href="#" class="CTAtoo2">Order now</a>
+          </div>
+        </div> <!-- #hero-chunk2 -->
+      </div> <!-- row -->
+    </section> <!-- container-fluid -->
 
+    <!-- 'Erase' Card -->
     <section class="container-fluid">
       <div id="card">
-        <div class="card-chunk2">
-           <h2>Erase</h2>
-            <p>No. 2 Pencil comes with a standard rubber eraser that lets you remove misspellings and wrong answers. (Note: erasers are non-replaceable. Please order more than one No. 2 Pencil if you a make a lot of mistakes.)</p>
+        <div id="erase">
+          <h2 id="nudge">Erase</h2>
+          <p>No. 2 Pencil comes with a standard rubber eraser that lets you remove misspellings and wrong answers. (Note: erasers are non-replaceable. Please order more than one No. 2 Pencil if you a make a lot of mistakes.)</p>
         </div>
-      </div>
-    </section>
+      </div> <!-- #card -->
+    </section> <!-- container-fluid -->
 
-    <section class="backspace">
+    <!-- Pencil color option 1: School Bus Yellow -->
+    <section class="container-fluid" id="sbyellow">
       <div class="pencil-color">
-        <div>
-          <img src="images/yellow-pencil.jpg" class="pencilop">
+        <div class="col-md-2 offset-md-2">
+          <img src="images/yellow-pencil.jpg" class="pencilop" id="yellow">
         </div>
-        <div class="card-chunk2">
+        <div class="colordes col-md-5 offset-md-1">
           <h2 id="nudge">School Bus Yellow</h2>
           <p>A writing tool for the masses. Each No. 2 Pencil has a unique wooden pattern completely concealed by our signature yellow paint inspired by your kid’s ride to school. This model is widely available in the US.</p>
         </div>
-      </div>
-    </section>
+      </div> <!-- pencil-color col-md-8 offset-md-2 -->
+    </section> <!-- container-fluid -->
 
-     <section class="backspace">
+    <!-- Pencil color option 2: Brunswick Green -->
+     <section class="container-fluid" id="bgreen">
       <div class="pencil-color">
-        <div>
+        <div class="colordes col-md-5 offset-md-2">
           <h2 id="nudge">Brunswick Green</h2>
           <p>Minimal, beautiful and just a little more European than the School Bus Yellow model. Also known to come in blue, black and even red. Not all countries use yellow pencils, you know.</p>
         </div>
-        <div class="card-chunk2">
+        <div class="col-md-2 offset-md-1">
           <img src="images/green-pencil.jpg" class="pencilop" id="green">
         </div>
-      </div>
-    </section>
+      </div> <!-- pencil-color col-md-8 offset-md-2 -->
+    </section> <!-- container-fluid -->
 
-    <section class="container-fluid text-center">
-      <div id="readycard">
+    <!-- READY-TO-WRITE Card -->
+    <section class="container-fluid text-center" id="readycard">
         <div>
-           <h2 id="nudge">READY-TO-WRITE™</h2>
-        </div>
-        <div id="everypencil">
+          <h2 id="nudge">READY-TO-WRITE™</h2>
           <p>Every No. 2 Pencil comes with patented ready-to-write technology. We’ve radically simplified things like making To Do lists, so you can spend less time remembering what to buy and more time figuring out what you wrote.</p>
         </div>
-      </div>
-    </section>
+    </section> <!-- container-fluid text-center -->
 
-    <section class="backspace text-center" id="end">
-      <div class="row" id="introprice">
-        <img src="images/pencilpoint.png" id="pencilpoint1" class="col-md-1">
-        <div id="nudge" class="col-md-10">
-          <h2 id="nudge">Introductory pricing for a limited time.</h2>
-          <a href="#" class="CTAtoo2">Order now</a>
-        </div>
-        <img src="images/pencilpoint.png" id="pencilpoint2" class="col-md-1">
-      </div>
-    </section>
+    <!-- Introductory pricing last CTA section -->
+    <section class="container-fluid text-center" id="end">
+      <h2 id="nudge">Introductory pricing for a limited time.</h2>
+      <a href="#" class="CTAtoo2">Order now</a>
+    </section> <!-- container-fluid text-center -->
 
 
 <!-- Below here is the Footer code. This should be same on each page
