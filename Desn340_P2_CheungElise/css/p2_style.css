@@ -159,19 +159,12 @@
 		fill:  whitesmoke;
 	}
 
-	/* 
-	header li {
-		float: left;
-		margin-left: 18px;
-	}
-	*/
 	#logo a {
 		display: inline-block;
 		padding: 1rem;
 		max-width: 120px;
 		margin-top: 15px;
 	}
-
 
 	#search {
 		display: inline-block;
@@ -290,6 +283,11 @@
 			border-style: solid;
 		}
 
+		a.CTAtoo:hover {
+			background-color: white;
+			color: black;
+		}
+
 		#paper {
 			background-color: #161616;
 			color: #fff;
@@ -392,6 +390,10 @@
 
 /* About Page styles and rules ********************/
 
+	body#about {
+		background-color: #161616;
+	}
+
 	#aboutHero {
 		background-size: cover;
 		background-color: #161616;
@@ -464,6 +466,11 @@
 			border-radius: 2em;
 			border-style: solid;
 			margin-bottom: 40px;
+		}
+
+		a.CTAtoo2:hover {
+			background-color: black;
+			color: white;
 		}
 
 		img#sharper {
