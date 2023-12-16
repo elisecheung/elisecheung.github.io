@@ -1,0 +1,679 @@
+/* STYLESHEET FOR LITTLE GHOST
+
+	Colors:
+		Cream (main background color) = #FCF7F0
+		Blue = #446083
+		Gold = #DBAA68
+		Brown (buttons) = #A06638
+
+	Typefaces:
+		font-family: 'Lato', sans-serif;
+			font-weight: 400 (Regular) / 700 (Bold) / 900 (Black)
+		font-family: 'Spectral', serif;
+			font-weight: 500 (Medium Italic) / 600 (Semibold) / 800 (ExtraBold)
+*/
+
+
+/* UNIVERSAL STYLES */
+
+	/* box model Fix */
+		
+		html {
+			box-sizing: border-box;
+		}
+		*, *:before, *:after {
+			box-sizing: inherit;
+		}
+
+	/* clear Fix */
+
+		.row:before,
+		.row:after {
+			content: " ";
+			display: table;
+		}
+
+		.row:after {
+			clear: both;
+		}
+
+	/* layout styles */
+
+		.container-fluid {
+			background: #FCF7F0;
+		}
+
+	/* image rules */
+
+		img {
+			max-width: 100%;
+		}
+
+		.gallery {
+			border-radius: 40px;
+			margin-bottom: 1.5em;
+			aspect-ratio: 7 / 6;
+			object-fit: cover;
+		}
+
+	/* Type Hierarchy */
+
+		h1 {
+			font-family: 'Spectral', serif;
+			font-weight: 800;
+			font-size: 61px;
+			color: #446083;
+			margin-bottom: 0.5em;
+		}
+
+		h2 {
+			font-family: 'Spectral', serif;
+			font-weight: 800;
+			font-size: 38px;
+			line-height: 58px;
+			color: #DBAA68;
+			margin-bottom: 0.2em;
+		}
+
+		h3 {
+			font-family: 'Spectral', serif;
+			font-size: 26px;
+			font-weight: 600;
+			line-height: 40px;
+			color: #446083;
+			margin: 0;
+		}
+
+		h4 {
+			font-family: 'Spectral', serif;
+			font-style: italic;
+			font-size: 23px;
+			font-weight: 500;
+			line-height: 35px;
+			color: #DBAA68;
+			margin-bottom: .25em;
+		}
+
+		h6 {
+			font-family: 'Lato', sans-serif;
+			font-weight: 400;
+			font-size: 14px;
+		}
+
+		p {
+			font-family: 'Lato', sans-serif;
+			font-size: 16px;
+			font-weight: 400;
+			line-height: 19px;
+			color: #446083;
+			margin: 0;
+		}
+
+		a {
+			text-decoration: none;
+			color: #FCF7F0;
+			font-family: 'Lato';
+			font-weight: 900;
+			font-size: 17px;
+		}
+
+		a:hover {
+			color: #DBAA68;
+		}
+
+		ul {
+			list-style-type: none;
+			font-family: Lato, sans-serif;
+			font-weight: 700;
+			font-size: 25px;
+			margin: 0;
+		}
+
+		.bold {
+			font-weight: 700;
+		}
+
+		.black {
+			font-weight: 900;
+		}
+
+		.blue {
+			color: #446083;
+		}
+
+		.cream {
+			color: #FCF7F0;
+		}
+
+		.gold {
+			color: #DBAA68;
+		}
+
+		.brown {
+			color: #A06638;
+		}
+
+		.center {
+			text-align: center;
+		}
+
+	/* Button Styling */
+
+		.button {
+			display: inline-block;
+			background: #A06638;
+			border-radius: 100px;
+			padding: 10px 23px;
+			margin-top: 2em;
+		}
+
+		.button:hover {
+			background: #DBAA68;
+			color: #FCF7F0;
+		}
+
+/* _____________________ HOME PAGE STYLING _____________________ */
+
+	.container#hero {
+		background-image: url(images/friends.png);
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+		border-radius: 57px;
+		padding: 7em;
+	}
+
+	.mobile {
+			display: none;
+		}
+
+	.blurb {
+		padding: 0 4em;
+		margin: 9em 0;
+	}
+
+	.container#inspiration {
+		background-image: url(images/inspiration.jpg);
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: bottom;
+		border-radius: 57px;
+		padding: 7em;
+	}
+
+	.container#oneweek {
+		padding: 8em 0;
+	}
+
+	div.scroll-container {
+		overflow: auto;
+		white-space: nowrap;
+		padding: 10px;
+	}
+
+	div.scroll-container img {
+		padding: 10px;
+		max-width: 70vw;
+	}
+
+	h3#fall {
+		margin-bottom: 2em;
+	}
+
+	.container-fluid#menugallery {
+		padding-bottom: 7em;
+	}
+
+/* _____________________ MENU PAGE STYLING _____________________ */
+
+	.container#menuhero {
+		background-image: url(images/coffee.jpg);
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+		border-radius: 57px;
+		padding: 7em;
+	}
+
+	section#menuitems {
+		padding: 4em 0 7em 0;
+	}
+
+	.mid {
+		line-height: 1.8;
+	}
+
+	.container#stars {
+		background-image: url(images/cookie.jpg);
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+		border-radius: 57px;
+		padding: 7em;
+	}
+
+	.container#review {
+		padding: 7em 28em;
+	}
+
+	.right {
+		text-align: right;
+	}
+
+
+/* _____________________ CRAYONS PAGE STYLING _____________________ */
+
+	.container#crayons {
+		background-image: url(images/crayons.jpg);
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+		border-radius: 57px;
+		padding: 7em 16em;
+	}
+
+	.container#classic {
+		padding: 8em 0;
+	}
+
+	ul#colours {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+
+	ul#colours > li {
+		padding-top: 3em;
+	}
+
+	ul#colours > li > p.black {
+		padding-top: .5em;
+	}
+
+/* _____________________ HEADER STYLING FOR ALL PAGES _____________________ */	
+
+	a#logo {
+		width: 15vw;
+	}
+
+	#mobilelogo {
+		display: none;
+	}
+
+	.flex-container {
+		display:flex;
+		flex-direction: row;
+		justify-content: center;
+	}
+
+	.navbar > li {
+		padding: 0 4em;
+	}
+
+	.navbar {
+		padding-bottom: 3em;
+		justify-content: center;
+	}
+
+	div#hamburger {
+		display: none;
+	}
+
+	/* mobile nav */ 
+		.topnav {
+			overflow: hidden;
+			position: relative;
+
+		}
+
+		.topnav a {
+	  		padding: 14px 16px;
+	  		text-decoration: none;
+	 		font-size: 3em;
+	  		display: block;
+		}
+
+		.topnav img {
+			width: 50vw;
+		}
+
+		.dropbtn {
+			background-color: #FCF7F0;
+			color: #446083;
+			padding: 14px 16px;
+			font-size: 3em;
+			border: none;
+		}
+
+		.dropdown {
+			position: absolute;
+			display: block;
+			right: 0;
+			top: 0;
+		}
+
+		.dropdown-content {
+			display: none;
+			position: absolute;
+			background-color: #DBAA68;
+			border-radius: 1em 0 1em 1em;
+			box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+			z-index: 1;
+			right: 0;
+		}
+
+		.dropdown-content a {
+			padding: 2em;
+			text-decoration: none;
+			display: block;
+			text-decoration: none;
+			font-size: 20px;
+		}
+
+		.dropdown-content a:hover {
+			background-color:  #446083;
+		}
+
+		.dropdown:hover .dropdown-content {
+			display: block;
+		}
+
+		.dropdown:hover .dropbtn {
+			background-color: #DBAA68; color:  #FCF7F0;
+		}
+
+		.topnav a:hover {
+			background-color:  #FCF7F0;
+			color: #DBAA68;
+		}
+
+
+/* _____________________ FOOTER STYLING FOR ALL PAGES _____________________ */
+
+	.smallfoot {
+		display: none;
+	}
+
+	div#ghost {
+		padding-right: 4.5em;
+	}
+
+	.container#footer {
+		max-width: 97vw;
+		background-color: #446083;
+		color: #FCF7F0;
+		border-radius: 60px 60px 0 0;
+		padding-top: 6em;
+	}
+
+	.bigfoot.space {
+		padding-bottom: .4em;
+	}	
+
+	.big {
+		line-height: 2.1;
+	}
+
+	.bigfoot#end {
+		align-items: center;
+		padding: 8em 0 5em 0;
+	}
+
+	ul#social {
+		display: flex;
+		flex-direction: row;
+	}
+
+	ul#social > li {
+		padding-right: 1em;
+	}
+
+	ul#social > li > svg:hover {
+		color: #DBAA68;
+	}
+
+	div#terms {
+		text-align: right;
+	}
+
+/* RESPONSIVE STYLING */
+
+	/* extra small: mobile */
+	@media screen and (max-width: 575px) {
+
+		#logo {
+			display: none;
+		}
+	
+		.container#hero , .container#inspiration {
+			padding: 4em;
+		}
+
+		.mobile , .smallfoot , .scroll-container {
+			display: inline;
+		}
+
+		.notmobile , .bigfoot , .imagegrid {
+			display: none;
+		}
+
+		#mobilelogo {
+			display: inline;
+			float: left;
+		} 
+
+		.blurb {
+			margin: 2em 0;
+		}
+
+		.blurb#community {
+			margin-top: 4em;
+		}
+
+		.blurb#crayons {
+			margin-bottom: 4em;
+		}
+
+		h3#fall {
+			padding: 0 1em;
+		}
+
+		section#menuitems {
+			padding-left: 10em
+		}
+
+		.container#stars {
+			padding: 3em;
+		}
+
+		.container#review {
+			padding: 7em;
+		}
+
+		.container#crayons {
+			padding: 5em;
+		}
+
+		ul#colours {
+			justify-content: center;
+		}
+
+		ul#colours > li {
+			padding: 2em;
+		}
+
+		.smallfoot > div#ghost {
+			padding: 0 5em 4em 5em;
+			align-content: center;
+		}
+
+		.above {
+			padding-top: 3em;
+		}
+
+		ul#mobilesocial {
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+		}
+
+		ul#mobilesocial > li {
+			padding: 2em .5em 0 .5em;
+		}
+
+	}
+
+	/* small */
+	@media screen and (min-width: 576px) and (max-width: 767px) {
+		.blurb {
+			margin: 3em 0;
+		}
+
+		.blurb#community {
+			margin-top: 5em;
+		}
+
+		.blurb#crayons {
+			margin-bottom: 5em;
+		}
+
+		section#menuitems {
+			padding-left: 10em
+		}
+
+		.container#stars {
+			padding: 4em;
+		}
+
+		.container#review {
+			padding: 7em;
+		}
+
+		.container#crayons {
+			padding: 5em;
+		}
+
+		ul#colours {
+			justify-content: center;
+		}
+
+		ul#colours > li {
+			padding: 2em;
+		}
+
+		.navbar > li {
+			padding: 0 2em;
+		}
+
+		.navbar {
+			padding-bottom: 2em;
+		}
+
+		.smallfoot , .scroll-container  {
+			display: inline;
+		}
+
+		.bigfoot , .imagegrid {
+			display: none;
+		}
+
+		.smallfoot > div#ghost {
+			padding: 0 10em 4em 10em;
+			align-content: center;
+		}
+
+		.above {
+			padding-top: 3em;
+		}
+
+
+		ul#mobilesocial {
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+		}
+
+		ul#mobilesocial > li {
+			padding: 2em .5em 0 .5em;
+		}
+	}
+
+	/* medium: tablet */
+	@media screen and (min-width: 768px) and (max-width: 991px) {
+
+		.blurb {
+			margin: 3.5em auto;
+			width: 30em;
+		}
+
+		.blurb#community {
+			margin-top: 5em;
+		}
+
+		.blurb#crayons {
+			margin-bottom: 8em;
+		}
+
+		.container#review {
+			padding: 5em;
+		}
+
+		.container#crayons {
+			padding: 5em;
+		}
+
+		ul#colours {
+			justify-content: center;
+		}
+
+		ul#colours > li {
+			padding: 2em;
+		}
+
+		.navbar > li {
+			padding: 0 3em;
+		}
+
+		.smallfoot  , .scroll-container {
+			display: inline;
+		}
+
+		.bigfoot , .imagegrid {
+			display: none;
+		}
+
+		.smallfoot > div#ghost {
+			padding: 0 20em 4em 20em;
+			align-content: center;
+		}
+
+		.above {
+			padding-top: 3em;
+		}
+
+		ul#mobilesocial {
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+		}
+
+		ul#mobilesocial > li {
+			padding: 2em .5em 0 .5em;
+		}
+
+	}
+
+	/* large */
+	@media screen and (min-width: 992px) and (max-width: 1199px) {
+		.scroll-container  {
+			display: none;
+		}
+	}
+
+	/* extra large: desktop */
+	@media screen and (min-width: 1200px) {
+		.scroll-container  {
+			display: none;
+		}
+	}
+
